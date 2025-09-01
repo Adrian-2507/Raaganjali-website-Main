@@ -1,47 +1,65 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raaganjali | Contact</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raaganjali | Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">Raaganjali</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+ <nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html" class="active">Contact</a>
+</nav>
+
+  <header class="page-head" data-aos="fade">
+    <h1>Contact Us</h1>
   </header>
 
-  <main class="page-content">
-    <h1>Contact Us</h1>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+  <section class="contact-section" data-aos="fade-up">
+    <form action="https://formspree.io/f/xblkzewz" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <input type="hidden" name="_subject" value="New message from Raganjali website!" />
     </form>
-  </main>
 
-  <footer>
-    <div class="footer-container">
-      <p>© 2025 Raaganjali | All Rights Reserved</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div class="contact-info">
+      <p>📧 <strong>Email:</strong> <a href="mailto:raaganjali.finland@gmail.com">raaganjali.finland@gmail.com</a></p>
+      <p>📞 <strong>Srikanth Aripirala:</strong> +358 406 720 695</p>
+      <p>📞 <strong>Ravichand Velpula:</strong> +358 400 770 421</p>
     </div>
-  </footer>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h3>Raganjali</h3>
+      <p>Celebrating Indian Music in Finland</p>
+    </div>
+    
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/raaganjalsuomi?igsh=YW9icWszeGRxem91&utm_source=qr" title="Instagram" target="_blank">
+        <img src="images/instagram.svg" alt="Instagram" style="width:24px; height:24px;">
+      </a>
+      <a href="https://www.facebook.com/share/1BACGW6q2k/?mibextid=wwXIfr" title="Facebook" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" style="width:24px; height:24px;">
+      </a>
+      <a href="https://youtube.com/@raaganjalisuomi?si=dxVs05CgfTDMBsEv" title="YouTube" target="_blank">
+        <img src="images/youtube.svg" alt="YouTube" style="width:24px; height:24px;">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Raganjali. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
