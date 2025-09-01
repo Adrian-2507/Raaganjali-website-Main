@@ -89,3 +89,4 @@ const navbar = document.getElementById('navbar');
       navbar.classList.remove('scrolled');
     }
   });
+<script/>
