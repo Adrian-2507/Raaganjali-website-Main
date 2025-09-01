@@ -29,7 +29,6 @@ function changeHeroBackground() {
 }
 setInterval(changeHeroBackground, 5000);
 
-<script>
 // Sticky navbar
 const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -77,5 +76,4 @@ const navbar = document.getElementById('navbar');
   let autoplay = setInterval(nextSlide, 5000);
   document.querySelector('.member-slider').addEventListener("mouseenter", () => clearInterval(autoplay));
   document.querySelector('.member-slider').addEventListener("mouseleave", () => autoplay = setInterval(nextSlide, 5000));
-  </script>
 
