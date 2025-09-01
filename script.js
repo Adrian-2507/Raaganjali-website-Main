@@ -90,3 +90,13 @@ const navbar = document.getElementById('navbar');
     }
   });
 </script>
+
+<!-- SCROLL EFFECTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ once:true });</script>
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
