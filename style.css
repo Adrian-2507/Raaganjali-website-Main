@@ -1,6 +1,6 @@
 /* css/styles.css */
 .hero {
-  background: url('../assets/images/hero1.jpg') center/cover no-repeat;
+  background: url('../images/hero1.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
