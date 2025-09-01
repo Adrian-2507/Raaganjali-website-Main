@@ -77,3 +77,15 @@ const navbar = document.getElementById('navbar');
   document.querySelector('.member-slider').addEventListener("mouseenter", () => clearInterval(autoplay));
   document.querySelector('.member-slider').addEventListener("mouseleave", () => autoplay = setInterval(nextSlide, 5000));
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once:true });</script>
+  <script>
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
