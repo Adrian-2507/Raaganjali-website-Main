@@ -127,17 +127,17 @@ section {
 }
 
 /* =========================
-   Team Section
+   Team Section (dark theme cards)
 ========================= */
 .team-shell {
-  background: #fff;
+  background: rgba(255,255,255,0.05); /* slight light overlay */
   padding: 2rem;
   border-radius: 15px;
   max-width: 1000px;
   margin: 2rem auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   text-align: center;
-  color: #0d1b3d;
+  color: #fff; /* force white text */
 }
 
 .team-shell h2 {
@@ -145,21 +145,15 @@ section {
   margin-bottom: 2rem;
 }
 
-.core-members {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
 .team-card {
-  background: #f9f9f9;
+  background: rgba(255,255,255,0.1); /* semi-transparent dark card */
   padding: 1rem;
   border-radius: 12px;
   max-width: 200px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
+  color: #fff; /* white text */
 }
 
 .team-card img {
@@ -168,6 +162,7 @@ section {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
+  border: 3px solid #d67a1e; /* matches theme */
 }
 
 .team-card:hover {
@@ -177,27 +172,22 @@ section {
 .team-card h3 {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-  color: #0d1b3d;
+  color: #fff;
 }
 
 .team-card p {
-  color: #333;
+  color: #ddd;
   font-size: 0.95rem;
 }
 
 /* =========================
-   Gallery
+   Gallery (dark theme with glow)
 ========================= */
 .gallery-container {
   padding: 3rem 2rem;
   text-align: center;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  background: rgba(255,255,255,0.05); /* subtle overlay */
+  border-radius: 15px;
 }
 
 .gallery-grid img {
@@ -205,13 +195,14 @@ section {
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #0d1b3d; /* navy border */
 }
 
 .gallery-grid img:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 16px rgba(214,122,30,0.8); /* orange glow */
 }
 
 /* =========================
